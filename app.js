@@ -21,7 +21,7 @@ app.get("/", function(req, res){
 //segunda ruta, recibe un parámetro
 app.get("/person/:id", function(req, res){
 
-    res.render("person", {ID: req.params.id, Qstr: req.query.qrst});
+    res.render("person", {ID: req.params.id, Message: req.query.message, Times: req.query.times });
 });
 
 
